@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3da85c0c-c998-43c8-9eaa-1b25165c6a9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>lowest_common_ancestor.py</StartupFile>
+    <StartupFile>longest_increasing_subsequence.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,9 @@
   <ItemGroup>
     <Compile Include="btree_level_travel_bottom_up.py" />
     <Compile Include="btree_level_travel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="longest_increasing_subsequence.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="lowest_common_ancestor.py">
