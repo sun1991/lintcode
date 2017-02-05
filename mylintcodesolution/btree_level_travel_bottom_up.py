@@ -1,4 +1,4 @@
-# http://www.lintcode.com/zh-cn/problem/binary-tree-level-order-traversal/
+# http://www.lintcode.com/en/problem/binary-tree-level-order-traversal-ii/
 
 
 tree_data =  [3,9,20,'#','#',15,7]

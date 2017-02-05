@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3da85c0c-c998-43c8-9eaa-1b25165c6a9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>btree_level_travel.py</StartupFile>
+    <StartupFile>tree_serialization.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,10 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="btree_level_travel_bottom_up.py" />
     <Compile Include="btree_level_travel.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="number_of_islands_class.py" />
+    <Compile Include="tree_serialization.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
