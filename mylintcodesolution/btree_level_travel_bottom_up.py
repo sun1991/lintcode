@@ -43,13 +43,13 @@ class Solution:
     @param root: The root of binary tree.
     @return: Level order in a list of lists of integers
     """
-    def levelOrderBottom(self, root):
+    def levelOrder(self, root):
         level = 0
         self.result_dict = {}
         self.dfs(root, level)
 
         result_list = []
-        keys = reversed(sorted(self.result_dict.keys()))
+        keys = sorted(self.result_dict.keys())
 
         for key in keys:
             result_list.append(self.result_dict[key])
