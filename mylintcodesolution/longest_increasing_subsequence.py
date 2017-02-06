@@ -20,6 +20,8 @@ class Solution:
 
         return len(self.result_dict)
 
+    # always main a list of subseq list length from 1-n
+    # where subseq list has increasing subseq for that length 
     def find_result(self):
         for x in self.data:
             subseq = self.find_subsequence(x)
