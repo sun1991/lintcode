@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3da85c0c-c998-43c8-9eaa-1b25165c6a9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Longest_Increasing_Continuous_Subsequence.py</StartupFile>
+    <StartupFile>Longest_Palindromic_Substring.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
