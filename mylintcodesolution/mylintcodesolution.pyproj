@@ -32,6 +32,9 @@
     <Compile Include="longest_increasing_subsequence.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Longest_Palindromic_Substring.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="lowest_common_ancestor.py">
       <SubType>Code</SubType>
     </Compile>
