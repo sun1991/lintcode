@@ -1,5 +1,5 @@
 # http://www.lintcode.com/en/problem/maximum-average-subarray/
-
+# http://mathoverflow.net/questions/112422/largest-subarray-with-average-geq-k
 
 #Given nums = [1, 12, -5, -6, 50, 3], k = 3
 #Return 15.667 // (-6 + 50 + 3) / 3 = 15.667
@@ -16,8 +16,15 @@ class Solution:
 
     def loopData(self, k):
         max_avg = self.calcAvg(0, k)
+        #prev_val = self.data[0]
 
         for index in range(self.data_length - k + 1):
+            #curr_val = self.data[index]
+            #if curr_val < prev_val:
+            #    print('skip {} at index {}'.format(curr_val, index))
+            #    continue
+
+            #prev_val = curr_val
             tmp_avg = self.loopDataIndex(index, k)
             max_avg = max(max_avg, tmp_avg)
         
@@ -44,6 +51,6 @@ class Solution:
 
 
 solution = Solution()
-result = solution.maxAverage([-4,5,-4,5,-4,5,-4,5,-4,5,-4,5,-4,5,-4,5,-4,5,-1000], 10)
+result = solution.maxAverage([1,12,-5,-6,50,3], 3)
 print(result)
 
