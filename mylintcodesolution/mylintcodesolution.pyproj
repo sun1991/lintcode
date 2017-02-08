@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3da85c0c-c998-43c8-9eaa-1b25165c6a9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Longest_Palindromic_Substring.py</StartupFile>
+    <StartupFile>max_avg_subarray.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,6 +39,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="lowest_common_ancestor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="max_avg_subarray.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="number_of_islands_class.py" />
