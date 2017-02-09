@@ -4,7 +4,7 @@
 #Given nums = [1, 12, -5, -6, 50, 3], k = 3
 #Return 15.667 // (-6 + 50 + 3) / 3 = 15.667
 
-class Solution:
+class Solution_OLD:
     # @param {int[]} nums an array with positive and negative numbers
     # @param {int} k an integer
     # @return {double} the maximum average
@@ -47,7 +47,34 @@ class Solution:
             total += self.data[index]
 
         return total / length
-        
+  
+   
+class Solution:
+    # @param {int[]} nums an array with positive and negative numbers
+    # @param {int} k an integer
+    # @return {double} the maximum average
+    def maxAverage(self, nums, k):
+        min_num, max_num = min(nums), max(nums)
+        num_length = len(nums)
+        prefix = [0] * (num_length + 1)
+
+        while max_num - min_num >= 1e-6:
+            mid, check = (min_num + max_num) / 2.0, False
+            min_pre = 0
+
+            for index in range(1, num_length + 1):
+                prefix[index] = prefix[index - 1] + nums[index - 1] - mid; # prefix sum
+                if index >= k and prefix[index] >= min_pre:
+                    check = True
+                    break
+                if index >= k:
+                    min_pre = min(min_pre, prefix[index - k + 1])
+
+            if check:
+                min_num = mid
+            else:
+                max_num = mid
+        return min_num      
 
 
 solution = Solution()
