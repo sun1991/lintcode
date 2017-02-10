@@ -1,5 +1,6 @@
 # http://www.lintcode.com/en/problem/maximum-average-subarray/
-# http://mathoverflow.net/questions/112422/largest-subarray-with-average-geq-k
+# http://hereandthere.blog.51cto.com/7561107/1622748
+
 
 #Given nums = [1, 12, -5, -6, 50, 3], k = 3
 #Return 15.667 // (-6 + 50 + 3) / 3 = 15.667
@@ -63,7 +64,7 @@ class Solution:
             min_pre = 0
 
             for index in range(1, num_length + 1):
-                prefix[index] = prefix[index - 1] + nums[index - 1] - mid; # prefix sum
+                prefix[index] = prefix[index - 1] + (nums[index - 1] - mid); # above mid-line
                 if index >= k and prefix[index] >= min_pre:
                     check = True
                     break
